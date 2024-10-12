@@ -1,0 +1,235 @@
+using System;
+using System.Collections.Generic;
+public class User
+{
+    public int UserId { get; set; }
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public string PhoneNumber { get; set; }
+    public string Address { get; set; }
+    public string UserType { get; set; }
+
+    public User(int userId, string name, string email, string phoneNumber, string address, string userType)
+    {
+        UserId = userId;
+        Name = name;
+        Email = email;
+        PhoneNumber = phoneNumber;
+        Address = address;
+        UserType = userType;
+    }
+
+    public void Register() => Console.WriteLine("User registered.");
+    public void Login() => Console.WriteLine("User logged in.");
+    public void UpdateProfile() => Console.WriteLine("User profile updated.");
+    public void ViewServices() => Console.WriteLine("Viewing available services.");
+}
+
+
+public class Service
+{
+    public int ServiceId { get; set; }
+    public string ServiceName { get; set; }
+    public string Description { get; set; }
+    public int DepartmentId { get; set; }
+    public double Fee { get; set; }
+    public List<string> RequiredDocuments { get; set; }
+
+    public Service(int serviceId, string serviceName, string description, int departmentId, double fee, List<string> requiredDocuments)
+    {
+        ServiceId = serviceId;
+        ServiceName = serviceName;
+        Description = description;
+        DepartmentId = departmentId;
+        Fee = fee;
+        RequiredDocuments = requiredDocuments;
+    }
+
+    public void ListAllServices() => Console.WriteLine("Listing all services...");
+    public void GetServiceDetails(int serviceId) => Console.WriteLine($"Getting details of service ID: {serviceId}");
+    public double CalculateFee() => Fee;
+}
+
+public class Application
+{
+    public int ApplicationId { get; set; }
+    public int UserId { get; set; }
+    public int ServiceId { get; set; }
+    public string ApplicationDate { get; set; }
+    public string Status { get; set; }
+    public List<string> Documents { get; set; }
+
+    public Application(int userId, int applicationId, int serviceId, string applicationDate, string status, List<string> documents)
+    {
+        UserId = userId;
+        ApplicationId = applicationId;
+        ServiceId = serviceId;
+        ApplicationDate = applicationDate;
+        Status = status;
+        Documents = documents;
+    }
+
+    public void SubmitApplication() => Console.WriteLine("Application submitted.");
+    public void CheckStatus() => Console.WriteLine($"Checking application status: {Status}");
+    public void UploadDocuments(List<string> docs) => Console.WriteLine("Documents uploaded.");
+    public void EditApplication() => Console.WriteLine("Application edited.");
+}
+
+public class Payment
+{
+    public int PaymentId { get; set; }
+    public int ApplicationId { get; set; }
+    public double Amount { get; set; }
+    public string PaymentDate { get; set; }
+    public string PaymentStatus { get; set; }
+
+    public Payment(int paymentId, int applicationId, double amount, string paymentDate, string paymentStatus)
+    {
+        PaymentId = paymentId;
+        ApplicationId = applicationId;
+        Amount = amount;
+        PaymentDate = paymentDate;
+        PaymentStatus = paymentStatus;
+    }
+
+    public void MakePayment() => Console.WriteLine("Payment made.");
+    public void GetPaymentStatus() => Console.WriteLine($"Payment status: {PaymentStatus}");
+    public void GenerateReceipt() => Console.WriteLine("Receipt generated.");
+}
+
+public class Document
+{
+    public int DocumentId { get; set; }
+    public string DocumentType { get; set; }
+    public string DocumentPath { get; set; }
+    public int ApplicationId { get; set; }
+
+    public Document(int documentId, string documentType, string documentPath, int applicationId)
+    {
+        DocumentId = documentId;
+        DocumentType = documentType;
+        DocumentPath = documentPath;
+        ApplicationId = applicationId;
+    }
+
+    public void UploadDocument() => Console.WriteLine("Document uploaded.");
+    public void DownloadDocument(int documentId) => Console.WriteLine($"Document with ID {documentId} downloaded.");
+    public void ValidateDocument() => Console.WriteLine("Document validated.");
+}
+
+public class Department
+{
+    public int DepartmentId { get; set; }
+    public string DepartmentName { get; set; }
+    public string ContactInfo { get; set; }
+
+    public Department(int departmentId, string departmentName, string contactInfo)
+    {
+        DepartmentId = departmentId;
+        DepartmentName = departmentName;
+        ContactInfo = contactInfo;
+    }
+
+    public void ListDepartments() => Console.WriteLine("Listing all departments.");
+    public void GetDepartmentInfo(int departmentId) => Console.WriteLine($"Information of department ID: {departmentId}");
+}
+
+public class Notification
+{
+    public int NotificationId { get; set; }
+    public int UserId { get; set; }
+    public string Message { get; set; }
+    public string Date { get; set; }
+    public string Status { get; set; }
+
+    public Notification(int notificationId, int userId, string message, string date, string status)
+    {
+        NotificationId = notificationId;
+        UserId = userId;
+        Message = message;
+        Date = date;
+        Status = status;
+    }
+
+    public void SendNotification(int userId, string message) => Console.WriteLine($"Notification sent to user ID: {userId}");
+    public void MarkAsRead(int notificationId) => Console.WriteLine($"Notification ID {notificationId} marked as read.");
+    public void GetNotifications(int userId) => Console.WriteLine($"Getting notifications for user ID: {userId}");
+}
+
+public class Feedback
+{
+    public int FeedbackId { get; set; }
+    public int UserId { get; set; }
+    public string Message { get; set; }
+    public string Date { get; set; }
+    public string Response { get; set; }
+
+    public Feedback(int feedbackId, int userId, string message, string date, string response)
+    {
+        FeedbackId = feedbackId;
+        UserId = userId;
+        Message = message;
+        Date = date;
+        Response = response;
+    }
+
+    public void SubmitFeedback(int userId, string message) => Console.WriteLine($"Feedback submitted by user ID: {userId}");
+    public void ViewFeedback(int feedbackId) => Console.WriteLine($"Viewing feedback ID: {feedbackId}");
+    public void ResponseToFeedback(int feedbackId, string response) => Console.WriteLine($"Responded to feedback ID {feedbackId}");
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Creating a User object
+        User user = new User(101, "Rajesh Kumar", "rajesh.kumar@example.com", "1234567890", "Goa, India", "Citizen");
+        user.Register();
+        user.Login();
+        user.UpdateProfile();
+        user.ViewServices();
+
+        // Creating a Service object
+        Service service = new Service(201, "Birth Certificate Issuance", "Issuance of Birth Certificate", 301, 100.0, new List<string> { "Proof of Birth" });
+        service.ListAllServices();
+        service.GetServiceDetails(201);
+        Console.WriteLine("Service Fee: " + service.CalculateFee());
+
+        // Creating an Application object
+        List<string> documents = new List<string> { "Proof of Birth" };
+        Application application = new Application(101, 301, 201, "2024-10-05", "Pending", documents);
+        application.SubmitApplication();
+        application.CheckStatus();
+        application.UploadDocuments(documents);
+        application.EditApplication();
+
+        // Creating a Payment object
+        Payment payment = new Payment(401, 301, 100.0, "2024-10-05", "Completed");
+        payment.MakePayment();
+        payment.GetPaymentStatus();
+        payment.GenerateReceipt();
+
+        // Creating a Document object
+        Document document = new Document(501, "Proof of Birth", "/documents/proof_of_birth.pdf", 301);
+        document.UploadDocument();
+        document.DownloadDocument(501);
+        document.ValidateDocument();
+
+        // Creating a Department object
+        Department department = new Department(301, "Civil Registration", "contact@civildept.gov.in");
+        department.ListDepartments();
+        department.GetDepartmentInfo(301);
+
+        // Creating a Notification object
+        Notification notification = new Notification(601, 101, "Your birth certificate application is pending", "2024-10-05", "Unread");
+        notification.SendNotification(101, "Your birth certificate application is pending.");
+        notification.MarkAsRead(601);
+        notification.GetNotifications(101);
+
+        // Creating a Feedback object
+        Feedback feedback = new Feedback(701, 101, "The process was efficient", "2024-10-05", "No response yet");
+        feedback.SubmitFeedback(101, "The process was efficient");
+        feedback.ViewFeedback(701);
+        feedback.ResponseToFeedback(701, "Thank you for your feedback.");
+    }
+}

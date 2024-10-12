@@ -1,0 +1,241 @@
+==== CONFIGS ====		
+{
+    "base_path": "c:\\Users\\User\\Desktop\\Goa_Online\\GoaOnline\\src",
+    "out": "c:\\Users\\User\\Desktop\\Goa_Online\\GoaOnline\\src\\javadoc",
+    "javadoc_executable": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.4.7-hotspot\\bin\\javadoc.exe",
+    "exclude": [],
+    "raw_params": ""
+}
+
+==== COMMAND ====
+"C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\javadoc.exe" 
+	-sourcepath "c:\Users\User\Desktop\Goa_Online\GoaOnline\src" 
+	-d "c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc" 
+	"c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java"
+	"c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Department.java"
+	"c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Document.java"
+	"c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Feedback.java"
+	"c:\Users\User\Desktop\Goa_Online\GoaOnline\src\GoaOnlinePortal.java"
+	"c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Notification.java"
+	"c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Payment.java"
+	"c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Service.java"
+	"c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java"
+
+
+==== JAVADOC OUTPUT ====
+Loading source file c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java...
+Loading source file c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Department.java...
+Loading source file c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Document.java...
+Loading source file c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Feedback.java...
+Loading source file c:\Users\User\Desktop\Goa_Online\GoaOnline\src\GoaOnlinePortal.java...
+Loading source file c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Notification.java...
+Loading source file c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Payment.java...
+Loading source file c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Service.java...
+Loading source file c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java...
+Constructing Javadoc information...
+Creating destination directory: "c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\"
+Building index for all the packages and classes...
+Standard Doclet version 21.0.4+7-LTS
+Building tree for all the packages and classes...
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\Application.html...
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java:1: warning: no comment
+public class Application extends User {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java:9: warning: no comment
+    public Application(int userId, String name, String email, String phoneNumber, String address, String userType,
+           ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java:29: warning: no comment
+    public void checkStatus() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java:38: warning: no comment
+    public void editApplication() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java:42: warning: no comment
+    public int getApplicationId() {
+               ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java:20: warning: no comment
+    public void submitApplication() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java:25: warning: no comment
+    public void submitApplication(int serviceId) {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Application.java:33: warning: no comment
+    public void uploadDocuments(String[] docs) {
+                ^
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\Department.html...
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Department.java:1: warning: no comment
+public class Department {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Department.java:7: warning: no comment
+    public Department(int departmentId, String departmentName, String contactInfo) {
+           ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Department.java:18: warning: no comment
+    public void getDepartmentInfo(int departmentId) {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Department.java:14: warning: no comment
+    public void listDepartments() {
+                ^
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\Document.html...
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Document.java:1: warning: no comment
+public class Document {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Document.java:8: warning: no comment
+    public Document(int documentId, String documentType, String documentPath, int applicationId) {
+           ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Document.java:20: warning: no comment
+    public void downloadDocument(int documentId) {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Document.java:16: warning: no comment
+    public void uploadDocument() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Document.java:24: warning: no comment
+    public void validateDocument() {
+                ^
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\Feedback.html...
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Feedback.java:1: warning: no comment
+public class Feedback {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Feedback.java:9: warning: no comment
+    public Feedback(int feedbackId, int userId, String message, String date, String response) {
+           ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Feedback.java:26: warning: no comment
+    public void responseToFeedback(int feedbackId, String response) {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Feedback.java:18: warning: no comment
+    public void submitFeedback(int userId, String message) {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Feedback.java:22: warning: no comment
+    public void viewFeedback(int feedbackId) {
+                ^
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\GoaOnlinePortal.html...
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\GoaOnlinePortal.java:1: warning: no comment
+public class GoaOnlinePortal {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\GoaOnlinePortal.java:1: warning: use of default constructor, which does not provide a comment
+public class GoaOnlinePortal {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\GoaOnlinePortal.java:3: warning: no comment
+    public static void main(String[] args) {
+                       ^
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\Notification.html...
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Notification.java:1: warning: no comment
+public class Notification {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Notification.java:9: warning: no comment
+    public Notification(int notificationId, int userId, String message, String date, String status) {
+           ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Notification.java:26: warning: no comment
+    public void getNotifications(int userId) {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Notification.java:22: warning: no comment
+    public void markAsRead(int notificationId) {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Notification.java:18: warning: no comment
+    public void sendNotification(int userId, String message) {
+                ^
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\Payment.html...
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Payment.java:1: warning: no comment
+public class Payment {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Payment.java:9: warning: no comment
+    public Payment(int paymentId, int applicationId, double amount, String paymentDate, String paymentStatus) {
+           ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Payment.java:26: warning: no comment
+    public void generateReceipt() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Payment.java:22: warning: no comment
+    public void getPaymentStatus() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Payment.java:18: warning: no comment
+    public void makePayment() {
+                ^
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\Service.html...
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Service.java:1: warning: no comment
+public class Service {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Service.java:10: warning: no comment
+    public Service(int serviceId, String serviceName, String description, int departmentId, double fee, String[] requiredDocuments) {
+           ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Service.java:28: warning: no comment
+    public double calculateFee() {
+                  ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Service.java:24: warning: no comment
+    public void getServiceDetails(int serviceId) {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Service.java:32: warning: no comment
+    public int getServiceId() {
+               ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\Service.java:20: warning: no comment
+    public void listAllServices() {
+                ^
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\User.html...
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:1: warning: no comment
+public class User {
+       ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:10: warning: no comment
+    public User(int userId, String name, String email, String phoneNumber, String address, String userType) {
+           ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:32: warning: no comment
+    public String getAddress() { return address; }
+                  ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:26: warning: no comment
+    public String getEmail() { return email; }
+                  ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:23: warning: no comment
+    public String getName() { return name; }
+                  ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:29: warning: no comment
+    public String getPhoneNumber() { return phoneNumber; }
+                  ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:20: warning: no comment
+    public int getUserId() { return userId; }
+               ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:35: warning: no comment
+    public String getUserType() { return userType; }
+                  ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:43: warning: no comment
+    public void login() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:39: warning: no comment
+    public void register() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:33: warning: no comment
+    public void setAddress(String address) { this.address = address; }
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:27: warning: no comment
+    public void setEmail(String email) { this.email = email; }
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:24: warning: no comment
+    public void setName(String name) { this.name = name; }
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:30: warning: no comment
+    public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:21: warning: no comment
+    public void setUserId(int userId) { this.userId = userId; }
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:36: warning: no comment
+    public void setUserType(String userType) { this.userType = userType; }
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:55: warning: no comment
+    public void submitFeedback() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:47: warning: no comment
+    public void updateProfile() {
+                ^
+c:\Users\User\Desktop\Goa_Online\GoaOnline\src\User.java:51: warning: no comment
+    public void viewServices() {
+                ^
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\package-summary.html...
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\package-tree.html...
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\overview-tree.html...
+Building index for all classes...
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\allclasses-index.html...
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\allpackages-index.html...
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\index-all.html...
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\search.html...
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\index.html...
+Generating c:\Users\User\Desktop\Goa_Online\GoaOnline\src\javadoc\help-doc.html...
+60 warnings
+
+
